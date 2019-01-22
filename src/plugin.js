@@ -204,7 +204,9 @@ const timeOffset = function(options) {
 };
 
 // Register the plugin with video.js.
-videojs.plugin('timeOffset', timeOffset);
+const registerPlugin = videojs.registerPlugin || videojs.plugin;
+
+registerPlugin('timeOffset', timeOffset);
 
 // Include the version number.
 timeOffset.VERSION = '0.0.1';

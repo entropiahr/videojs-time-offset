@@ -60,7 +60,7 @@ require('videojs-time-offset');
 
 var player = videojs('my-video');
 
-player.time-offset();
+player.timeOffset();
 ```
 
 ### RequireJS/AMD
@@ -71,7 +71,7 @@ When using with RequireJS (or another AMD library), get the script in whatever w
 require(['video.js', 'videojs-time-offset'], function(videojs) {
   var player = videojs('my-video');
 
-  player.time-offset();
+  player.timeOffset();
 });
 ```
 
